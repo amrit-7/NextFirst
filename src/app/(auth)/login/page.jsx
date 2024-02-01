@@ -1,7 +1,17 @@
-import React from "react";
+"use client";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
-  return <div>LoginPage</div>;
+  const router = useRouter();
+  const handleLogin = () => {
+    router.push("/");
+  };
+  return (
+    <>
+      <div>LoginPage</div>
+      <button onClick={handleLogin}>Login</button>
+    </>
+  );
 };
 
 export default LoginPage;
