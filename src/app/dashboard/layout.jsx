@@ -6,19 +6,21 @@ export const metadata = {
 export default function DashboardLayout({ children }) {
   return (
     <html lang="en">
-      <div>
-        <nav>
-          <ul>
-            <li>Hello</li>
-            <li>Hello</li>
-            <li>Hello</li>
-          </ul>
-        </nav>
-      </div>
-      <body>{children}</body>
-      <footer>
-        <p>footer</p>
-      </footer>
+      <body>
+        <div>
+          <nav>
+            <ul>
+              <li>Hello</li>
+              <li>Hello</li>
+              <li>Hello</li>
+            </ul>
+          </nav>
+        </div>
+        {children}
+        <footer>
+          <p>footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
